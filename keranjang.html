@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Belanja - Showroom Kekinian</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>KERANJANG</h1>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html">Produk</a>
+        <a href="kategori.html">Kategori</a>
+        <a href="keranjang.html">Keranjang</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-container">
+        <h2>Keranjang Belanja Anda</h2>
+
+        <div class="cart-list">
+          <article class="cart-item">
+            <div class="cart-item-img">
+              <img src="img/cbr.jpg" alt="CBR 600" height="100" width="100" />
+            </div>
+            <div class="cart-item-details">
+              <h4>CBR 600</h4>
+              <p class="price">Rp 507.000.000</p>
+              <div class="qty-wrapper">
+                <label for="qty-1">Jumlah:</label>
+                <input type="number" id="qty-1" value="1" min="0" />
+              </div>
+            </div>
+            <div class="cart-item-action">
+              <button type="button" class="btn-remove">Hapus</button>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-item-img">
+              <img
+                src="img/astrea.jpg"
+                alt="Astrea Grand Bulus"
+                width="100"
+                height="100"
+              />
+            </div>
+            <div class="cart-item-details">
+              <h4>Astrea Grand Bulus</h4>
+              <p class="price">Rp 7.500.000</p>
+              <div class="qty-wrapper">
+                <label for="qty-2">Jumlah:</label>
+                <input type="number" id="qty-2" value="1" min="0" />
+              </div>
+            </div>
+            <div class="cart-item-action">
+              <button type="button" class="btn-remove">Hapus</button>
+            </div>
+          </article>
+        </div>
+
+        <aside class="cart-summary">
+          <div class="summary-content">
+            <p>Subtotal: <span>Rp 514.500.000</span></p>
+            <p>Ongkos Kirim: <span>Gratis</span></p>
+            <hr />
+            <h3>Total: <span>Rp 514.500.000</span></h3>
+            <button class="btn-checkout">Lanjutkan ke Pembayaran</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>Kontak: kekinian@motor.com | WhatsApp: 0838-2991-3856</p>
+      <p>&copy; 2026 Showroom Kekinian. Hak Cipta Dilindungi.</p>
+    </footer>
+  </body>
+</html>
